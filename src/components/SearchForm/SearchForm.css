@@ -1,0 +1,120 @@
+.search {
+  display: flex;
+  max-width: 1140px;
+  width: 89.0625vw;
+  flex-direction: row;
+  margin: 70px auto 80px auto;
+  border-radius: 9px;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+
+.search__form {
+  min-height: 72px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: #F9F9F9;
+  border-radius: 9px 0 0 9px;
+  align-items: center;
+}
+
+.search__label {
+  background-image: url('../../images/search-icon.svg');
+  width: 34px;
+  height: 34px;
+  margin: 0 10px 0 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search__input {
+  outline: none;
+  width: 59vw;
+  max-width: 786px;
+  background: #F9F9F9;
+  border: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: #a0a0a0;
+}
+
+input:-moz-placeholder {
+  color: #a0a0a0;
+}
+
+input:-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+.search__button {
+  background-image: url('../../images/search-button.svg');
+  width: 34px;
+  height: 34px;
+  margin-right: 19px;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .search__input {
+      width: 57vw;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .search__input{
+    width: 58vw;
+  }
+  .search{
+    width: 94vw;
+  }
+}
+@media screen and (max-width: 923px) {
+  .search__input{
+    width: 52vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search__input {
+      width: 47vw;
+      padding-left: 19px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+      flex-direction: column;
+      background-color: transparent;
+      border-bottom: 1px solid #E8E8E8;
+      border-radius: 0;
+      padding-bottom: 44px;
+      margin-bottom: 0;
+  }
+  .search__form {
+    margin-bottom: 42px;
+  }
+  .search__input {
+    width: 72vw;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .search__label {
+    display: none;
+  }
+  .search__input {
+    width: 81vw;
+}
+}
